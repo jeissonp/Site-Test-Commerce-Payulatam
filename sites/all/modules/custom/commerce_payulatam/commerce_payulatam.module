@@ -43,7 +43,9 @@ function commerce_payulatam_entity_info() {
  */
 function commerce_payulatam_permission() {
   return array(
-
+    'commerce payulatam view transaction' => array(
+      'title' => t('View transaction'),
+    ),
   );
 }
 
