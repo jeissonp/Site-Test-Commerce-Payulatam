@@ -14,9 +14,6 @@
 /**
  * Root directory of Drupal installation.
  */
-ini_set('memory_limit', '256M');
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 define('DRUPAL_ROOT', getcwd());
 
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
