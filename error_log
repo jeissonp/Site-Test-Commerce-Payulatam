@@ -1,0 +1,149 @@
+[25-Nov-2013 16:53:18 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.module on line 120
+[25-Nov-2013 16:53:22 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.module on line 120
+[25-Nov-2013 16:55:25 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.module on line 120
+[25-Nov-2013 17:04:23 America/New_York] PHP Fatal error:  Call to undefined function commerce_payulatam_get_reference() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.module on line 215
+[25-Nov-2013 17:06:44 America/New_York] PHP Fatal error:  Call to undefined function commerce_pagosonline_get_md5() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.inc on line 8
+[25-Nov-2013 18:18:09 America/New_York] PHP Fatal error:  Call to undefined function commerce_payulatam_get_param() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.module on line 65
+[25-Nov-2013 18:36:51 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_pagosonline.inc' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home3/jeissonp/public_html/payulatam/includes/menu.inc on line 515
+[25-Nov-2013 19:12:02 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_pagosonline.inc' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home3/jeissonp/public_html/payulatam/includes/menu.inc on line 515
+[25-Nov-2013 19:13:54 America/New_York] PHP Fatal error:  Call to undefined function commerce_pagosonline_get_param() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.inc on line 11
+[25-Nov-2013 20:54:00 America/New_York] PHP Fatal error:  Call to undefined function commerce_pagosonline_get_param() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.inc on line 59
+[25-Nov-2013 21:08:12 America/New_York] PHP Fatal error:  Call to undefined function commerce_pagosonline_get_param() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.inc on line 59
+[26-Nov-2013 07:44:11 America/New_York] PHP Fatal error:  Call to undefined function commerce_pagosonline_get_param() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.inc on line 59
+[26-Nov-2013 15:38:26 America/New_York] PHP Fatal error:  Call to undefined function commerce_pagosonline_get_param() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.inc on line 59
+[26-Nov-2013 15:46:01 America/New_York] PHP Fatal error:  Call to undefined function commerce_pagosonline_get_param() in /home3/jeissonp/public_html/payulatam/sites/all/modules/custom/commerce_payulatam/commerce_payulatam.inc on line 59
+[31-Mar-2014 13:51:46 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 13:52:08 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 13:58:13 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 13:59:06 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:03:53 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:04:05 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:04:28 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:04:55 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:04:57 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:04:59 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:10 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:14 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:15 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:21 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:21 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:24 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:25 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:26 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:40 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:41 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:42 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:57 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:58 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 14:06:58 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 15:20:23 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 15:20:25 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[31-Mar-2014 15:20:27 America/Denver] PHP Warning:  PHP Startup: apc: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
