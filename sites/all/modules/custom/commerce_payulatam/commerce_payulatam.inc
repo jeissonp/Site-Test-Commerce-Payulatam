@@ -67,7 +67,17 @@ function commerce_payulatam_confirmation($order) {
 
     $payment = commerce_payment_method_instance_load($order->data['payment_method']);
 
-    commerce_order_status_update($order, $payment['settings']['py_status_' . $transaction->status]);
+    $default_status = array(
+      COMMERCE_PAYMENT_STATUS_SUCCESS => 'pending',
+      COMMERCE_PAYMENT_STATUS_FAILURE => 'canceled',
+    );
+
+    $status = $default_status[$transaction->status];
+    if (isset($payment['settings']['py_status_' . $transaction->status])) {
+      $status = $payment['settings']['py_status_' . $transaction->status];
+    }
+
+    commerce_order_status_update($order, $status);
 
     module_invoke_all('commerce_payulatam_confirmation', $order, $transaction);
   }
