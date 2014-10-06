@@ -78,7 +78,9 @@ function commerce_payulatam_confirmation($order) {
     }
 
     commerce_order_status_update($order, $status);
-
+    if ($transaction->status == COMMERCE_PAYMENT_STATUS_SUCCESS) {
+      commerce_checkout_complete($order);
+    }
     module_invoke_all('commerce_payulatam_confirmation', $order, $transaction);
   }
   catch (Exception $e) {
