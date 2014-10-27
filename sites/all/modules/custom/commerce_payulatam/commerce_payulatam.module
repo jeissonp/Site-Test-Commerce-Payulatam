@@ -298,12 +298,26 @@ function commerce_payulatam_settings_form($settings = NULL) {
 
   $status = commerce_order_status_options_list();
 
+  $form['py_assign_status'] = array(
+    '#title' => t('Assign Status'),
+    '#type' => 'radios',
+    '#options' => array(
+      'A' => t('Automatic'),
+      'M' => t('Manual'),
+    ),
+    '#default_value' => isset($settings['py_assign_status']) ? $settings['py_assign_status'] : 'M',
+    '#required' => TRUE,
+  );
+
   $form['py_status_' . COMMERCE_PAYMENT_STATUS_SUCCESS] = array(
     '#title' => t('Status Success'),
     '#type' => 'select',
     '#options' => $status,
     '#default_value' => isset($settings['py_status_' . COMMERCE_PAYMENT_STATUS_SUCCESS]) ? $settings['py_status_' . COMMERCE_PAYMENT_STATUS_SUCCESS] : 'pending',
-    '#required' => TRUE,
+    //'#required' => TRUE,
+    '#states' => array(
+      'visible' => array('input[name*="py_assign_status"]' => array('value' => 'M')),
+    ),
   );
 
   $form['py_status_' . COMMERCE_PAYMENT_STATUS_FAILURE] = array(
@@ -311,7 +325,10 @@ function commerce_payulatam_settings_form($settings = NULL) {
     '#type' => 'select',
     '#options' => $status,
     '#default_value' => isset($settings['py_status_' . COMMERCE_PAYMENT_STATUS_FAILURE]) ? $settings['py_status_' . COMMERCE_PAYMENT_STATUS_FAILURE] : 'canceled',
-    '#required' => TRUE,
+    //'#required' => TRUE,
+    '#states' => array(
+      'visible' => array('input[name*="py_assign_status"]' => array('value' => 'M')),
+    ),
   );
 
   $form['py_description'] = array(
