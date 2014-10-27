@@ -72,14 +72,23 @@ function commerce_payulatam_confirmation($order) {
       COMMERCE_PAYMENT_STATUS_FAILURE => 'canceled',
     );
 
-    $status = $default_status[$transaction->status];
-    if (isset($payment['settings']['py_status_' . $transaction->status])) {
-      $status = $payment['settings']['py_status_' . $transaction->status];
-    }
+    if (!isset($payment['settings']['py_assign_status']) || $payment['settings']['py_assign_status'] == 'M') {
+      $status = $default_status[$transaction->status];
 
-    commerce_order_status_update($order, $status);
-    if ($transaction->status == COMMERCE_PAYMENT_STATUS_SUCCESS) {
-      commerce_checkout_complete($order);
+      if (isset($payment['settings']['py_status_' . $transaction->status])) {
+        $status = $payment['settings']['py_status_' . $transaction->status];
+      }
+
+      commerce_order_status_update($order, $status);
+      if ($transaction->status == COMMERCE_PAYMENT_STATUS_SUCCESS) {
+        commerce_checkout_complete($order);
+      }
+    }
+    elseif ($transaction->status == COMMERCE_PAYMENT_STATUS_SUCCESS) {
+      commerce_payment_redirect_pane_next_page($order);
+    }
+    else {
+      commerce_payment_redirect_pane_previous_page($order);
     }
     module_invoke_all('commerce_payulatam_confirmation', $order, $transaction);
   }
