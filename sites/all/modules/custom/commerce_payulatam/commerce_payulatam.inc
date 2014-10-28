@@ -104,7 +104,7 @@ function commerce_payulatam_confirmation($order) {
  * Save transaction.
  */
 function commerce_payulatam_save_transation($param, $order) {
-  $exchange_money = $param['value'] / $param['exchange_rate'];
+  $exchange_money = $param['value'];
   $amount = commerce_currency_decimal_to_amount($exchange_money, $param['currency']);
 
   $result = db_insert('commerce_payulatam')
