@@ -387,10 +387,10 @@ function commerce_payulatam_redirect_form($form, &$form_state, $order, $payment_
   if ($settings['py_tax'] && @$components['components']) {
     foreach ($components['components'] as $key => $component) {
       if ($component['name'] == 'base_price') {
-        $taxes['base_price'] = $component['price']['amount'];
+        $taxes['base_price'] = commerce_currency_amount_to_decimal($component['price']['amount'], $currency_code);
       }
       elseif (in_array($component['price']['data']['tax_rate']['name'], $settings['py_tax'])) {
-        $taxes['total'] += $component['price']['amount'];
+        $taxes['total'] += commerce_currency_amount_to_decimal($component['price']['amount'], $currency_code);
       }
     }
   }
