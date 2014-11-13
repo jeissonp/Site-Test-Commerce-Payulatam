@@ -407,6 +407,15 @@ function commerce_payulatam_redirect_form($form, &$form_state, $order, $payment_
     '@order_id' => $order->order_id,
   ));
 
+
+
+  $profile = $wrapper->commerce_customer_billing->value();
+
+  $wrapper_profile = entity_metadata_wrapper('commerce_customer_profile', $profile);
+
+  ;
+
+
   // Structure required for PAYULATAM.
   $data = array(
     'merchantId' => $settings['py_merchant_id'],
@@ -423,6 +432,10 @@ function commerce_payulatam_redirect_form($form, &$form_state, $order, $payment_
     'confirmationUrl' => $url_page['confirmation'],
     'responseUrl' => $url_page['response'],
     'extra1' => $payment_method['instance_id'],
+    'billingAddress' => $wrapper_profile->commerce_customer_address->thoroughfare->value(),
+    'billingCountry' => $wrapper_profile->commerce_customer_address->country->value(),
+    'billingCity' => $wrapper_profile->commerce_customer_address->locality->value(),
+    'zipCode' => $wrapper_profile->commerce_customer_address->postal_code->value(),
   );
 
   // Mode Test.
