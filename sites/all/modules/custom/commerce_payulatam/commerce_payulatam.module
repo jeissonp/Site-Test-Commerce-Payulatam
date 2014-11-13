@@ -197,7 +197,7 @@ function commerce_payulatam_commerce_payment_method_info() {
     'description' => t('PAYULATAM Payments Standard'),
     'terminal' => FALSE,
     'offsite' => TRUE,
-    'offsite_autoredirect' => TRUE,
+    'offsite_autoredirect' => FALSE,
   );
 
   return $payment_methods;
